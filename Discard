@@ -1,0 +1,16 @@
+//package application;
+public class Discard {
+  private UnoCards[] discardPile;
+  private int numCardsInPile;
+  //constructor creates array length 108 and initializes numCardsInPile to 0
+  public Discard() {
+    discardPile=new UnoCards[108];
+    numCardsInPile=0;
+  }
+  //the discard method adds the input to end of array and increments numCardsInPile
+  public void discard(UnoCards card) {
+    discardPile[numCardsInPile]=card;
+    numCardsInPile++;
+  }
+  
+}
